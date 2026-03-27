@@ -8,7 +8,7 @@ const BLUE: &str = "\x1b[94m";
 const YELLOW: &str = "\x1b[93m";
 const MAGENTA: &str = "\x1b[95m";
 
-pub(crate) fn render_markdown(markdown: &str, color: bool) -> String {
+pub fn render_markdown(markdown: &str, color: bool) -> String {
     let normalized = markdown.replace("\r\n", "\n").replace('\r', "\n");
     let lines: Vec<&str> = normalized.lines().collect();
     let mut output = String::new();

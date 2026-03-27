@@ -5,7 +5,7 @@ use std::io::{self, BufRead, BufReader, IsTerminal, Write};
 const CLEAR_SCREEN: &str = "\x1b[2J\x1b[H";
 const CLEAR_LINE: &str = "\r\x1b[2K";
 
-pub(crate) fn run_pager(rendered: &str) -> Result<(), String> {
+pub fn run_pager(rendered: &str) -> Result<(), String> {
     let stdout = io::stdout();
     if !stdout.is_terminal() {
         print!("{rendered}");

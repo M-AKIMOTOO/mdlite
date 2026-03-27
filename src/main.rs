@@ -1,13 +1,9 @@
-mod markdown;
-mod pager;
-
 use std::env;
 use std::fs;
 use std::io::{self, IsTerminal, Read};
 use std::process;
 
-use crate::markdown::render_markdown;
-use crate::pager::run_pager;
+use mdlite::{render_markdown, run_pager};
 
 const HELP: &str = "\
 mdlite - lightweight terminal markdown reader
