@@ -17,6 +17,27 @@ mdlite README.md
 cat README.md | mdlite
 ```
 
+## Library usage
+
+```rust
+let rendered = mdlite::render_markdown("# Hello\n\n- one\n- two\n", false);
+print!("{rendered}");
+```
+
+ANSI styling can be enabled by passing `true` as the second argument.
+
+```rust
+let rendered = mdlite::render_markdown("`code` and **bold**\n", true);
+```
+
+To page the rendered output inside a terminal:
+
+```rust
+let rendered = mdlite::render_markdown("# Document\n", true);
+mdlite::run_pager(&rendered)?;
+# Ok::<(), String>(())
+```
+
 ## Supported features
 
 - ATX headings (`#`, `##`, ...)
