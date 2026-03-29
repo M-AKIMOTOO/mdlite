@@ -2,6 +2,15 @@
 name = "mdlite"
 version = "0.2.0"
 edition = "2024"
+rust-version = "1.85"
+description = "A super-lightweight terminal Markdown reader"
+license = "MIT"
+repository = "https://github.com/M-AKIMOTOO/mdlite"
+homepage = "https://github.com/M-AKIMOTOO/mdlite"
+documentation = "https://docs.rs/mdlite"
+readme = "README.md"
+keywords = ["markdown", "terminal", "cli", "pager", "viewer"]
+categories = ["command-line-utilities", "text-processing"]
 
 [dependencies]
 

@@ -4,6 +4,12 @@
 
 It focuses on the basic features of GitHub Flavored Markdown and keeps the implementation dependency-free.
 
+## Installation
+
+```bash
+cargo install mdlite
+```
+
 ## Usage
 
 ```bash
